@@ -1,13 +1,13 @@
 // Packages
 import React from 'react';
-import { addDays } from 'date-fns';
+import { addDays, addHours, addMinutes, addSeconds } from 'date-fns';
 // Components
 import { Countdown } from './components/Countdown/Countdown';
 
 function App() {
   return (
     <div className="App">
-      <Countdown date={addDays(Date.now(), 20)} />
+      <Countdown date={addHours(Date.now(), 15)} />
     </div>
   );
 }
